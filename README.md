@@ -1,3 +1,6 @@
+# Info
+The API is not online yet, I need to finish the front-end panel and documentation first, then the API will be opened for public.
+
 # Adonis API application
 
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
