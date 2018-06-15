@@ -24,10 +24,10 @@ Route.post('/login', 'AuthController.postLogin')
 Route.post('/logout', 'AuthController.postLogout').middleware(['auth'])
 
 Route.post('/mantra', 'MantraController.postMantra').middleware(['auth'])
-Route.get('/mantra', 'MantraController.getAcceptedMantras').middleware(['auth'])
-Route.get('/allmantras', 'MantraController.getMantras').middleware(['auth'])
+Route.get('/mantra', 'MantraController.getAcceptedMantras')
+Route.get('/allmantras', 'MantraController.getMantras')
 
 Route.post('/kidung', 'KidungController.postKidung').middleware(['auth'])
-Route.get('/kidung', 'KidungController.getAcceptedKidungs').middleware(['auth'])
-Route.get('/allkidungs', 'KidungController.getKidungs').middleware(['auth'])
+Route.get('/kidung', 'KidungController.getAcceptedKidungs')
+Route.get('/allkidungs', 'KidungController.getKidungs')
 
