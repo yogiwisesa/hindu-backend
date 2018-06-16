@@ -4,6 +4,7 @@ const Database = use('Database')
 
 class KidungController {
 
+    // OK
     async postKidung({ request }) {
         const { nama_kidung, kidung, sound_url, submitted_by, status } = request.all()
 
@@ -30,7 +31,7 @@ class KidungController {
         }
     }
 
-
+// OK
     async getKidungs({ request }) {
         const page = request.header('page')
         try {
@@ -48,7 +49,7 @@ class KidungController {
             }
         }
     }
-
+// OK
     async getAcceptedKidungs({ request }) {
         const page = request.header('page')
         try {

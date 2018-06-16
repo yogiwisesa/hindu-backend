@@ -38,6 +38,22 @@ class AuthController {
     async postLogout({ auth }) {
         return await auth.logout() 
     }
+
+    async getProfileJwt({  auth }) {
+        try {
+            const result = await auth.current.user
+            return {
+                status: "ok",
+                result: result
+            }
+        } catch(e) {
+            return {
+                status: "err",
+                message: e
+            }
+        }
+
+      }
 }
 
 module.exports = AuthController

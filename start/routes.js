@@ -22,6 +22,8 @@ Route.get('/', ({ request }) => {
 Route.post('/register', 'AuthController.postRegister')
 Route.post('/login', 'AuthController.postLogin')
 Route.post('/logout', 'AuthController.postLogout').middleware(['auth'])
+Route.get('/profile', 'AuthController.getProfileJwt').middleware(['auth'])
+
 
 Route.post('/mantra', 'MantraController.postMantra').middleware(['auth'])
 Route.get('/mantra', 'MantraController.getAcceptedMantras')
